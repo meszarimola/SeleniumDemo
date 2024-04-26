@@ -16,8 +16,6 @@ public class SeleniumTest {
   //Just one Selenium test
   @BeforeTest
   public void setUp() {
-//    System.setProperty("webdriver.chrome.driver", "C:\\Users\\alice\\IdeaProjects\\SeleniumDemo\\chromedriver.exe");
-//    ChromeOptions options = new ChromeOptions();
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver();
   }
@@ -38,8 +36,6 @@ public class SeleniumTest {
   //Gherkin lines, BDD
   @Given("I am on the home page")
   public void i_am_on_the_home_page(){
-//    System.setProperty("webdriver.chrome.driver", "C:\\Users\\alice\\IdeaProjects\\SeleniumDemo\\chromedriver.exe");
-//    ChromeOptions options = new ChromeOptions();
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver();
     driver.get("https://bevasarlas.tesco.hu/groceries/en-GB");
